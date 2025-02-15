@@ -4,6 +4,7 @@ import "./globals.css";
 import Notifications from "@/components/notifications";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import {Chicle, Monoton, Yellowtail, Young_Serif} from 'next/font/google';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +16,31 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const monoton = Monoton({
+  weight:'400',
+  variable:'--font-monoton',
+  subsets: ['latin'],
+})
+
+const chicle = Chicle({
+  weight:'400',
+  variable:'--font-chicle',
+  subsets: ['latin'],
+})
+
+const yellowtail = Yellowtail({
+  weight:"400",
+  variable:'--font-yellowtail',
+  subsets: ['latin'],
+})
+
+const youngSerif = Young_Serif({
+  weight:'400',
+  variable:'--font-youngserif',
+  subsets:['latin'],
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${monoton.variable} ${chicle.variable} ${yellowtail.variable} ${youngSerif.variable} antialiased`}
       >
         <Notifications />
         <Navbar />

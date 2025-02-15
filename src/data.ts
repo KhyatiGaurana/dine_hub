@@ -372,7 +372,7 @@ type Product = {
       title: "Italian Pastas",
       desc: "Savor the taste of perfection with our exquisite Italian handmade pasta menu.",
       img: "/temporary/m1.png",
-      color: "white",
+      color: "rust",
     },
     {
       id: 2,
@@ -380,7 +380,7 @@ type Product = {
       title: "Juicy Burgers",
       desc: "Burger Bliss: Juicy patties, bold flavors, and gourmet toppings galore.",
       img: "/temporary/m2.png",
-      color: "black",
+      color: "ochre",
     },
     {
       id: 3,
@@ -388,6 +388,8 @@ type Product = {
       title: "Cheesy Pizzas",
       desc: "Pizza Paradise: Irresistible slices, mouthwatering toppings, and cheesy perfection.",
       img: "/temporary/m3.png",
-      color: "white",
+      color: "rust",
     },
   ];
+
+  
